@@ -1,0 +1,32 @@
+Checkpoint: linear_probing_20261116_161553_349684.pt
+Validierungsbilder: 6309
+Richtige Vorhersagen: 6294
+Fehler: 15
+Trefferquote: 99.76%
+
+Trefferquote pro Klasse:
+Orange: 603/605 (99.67%)
+Mandarine: 74/74 (100.00%)
+Clementine: 74/74 (100.00%)
+Apfel: 2488/2488 (100.00%)
+Pfirsich: 720/721 (99.86%)
+Nektarine: 213/215 (99.07%)
+Birne: 1833/1843 (99.46%)
+Banane: 289/289 (100.00%)
+
+Falsch erkannte Bilder:
+Original: Nektarine | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Nektarine/Nectarine 1__208_100.jpg
+Original: Nektarine | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Nektarine/Nectarine 1__218_100.jpg
+Original: Orange | Vorhergesagt: Nektarine | Bild: Assets/Fruits-360-Station-1/Training/Orange/orange 4__r0_93_100.jpg
+Original: Orange | Vorhergesagt: Nektarine | Bild: Assets/Fruits-360-Station-1/Training/Orange/orange 4__r0_94_100.jpg
+Original: Birne | Vorhergesagt: Nektarine | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear 2__r_63_100.jpg
+Original: Pfirsich | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Pfirsich/Peach Flat 1__r_248_100.jpg
+Original: Birne | Vorhergesagt: Nektarine | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear 2__r_66_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_166_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_167_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_169_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_170_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_171_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_173_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_174_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_178_100.jpg
