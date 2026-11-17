@@ -1,0 +1,30 @@
+Checkpoint: linear_probing_20261116_184948_182532.pt
+Validierungsbilder: 6309
+Richtige Vorhersagen: 6296
+Fehler: 13
+Trefferquote: 99.79%
+
+Trefferquote pro Klasse:
+Orange: 604/605 (99.83%)
+Mandarine: 74/74 (100.00%)
+Clementine: 74/74 (100.00%)
+Apfel: 2488/2488 (100.00%)
+Pfirsich: 714/721 (99.03%)
+Nektarine: 215/215 (100.00%)
+Birne: 1838/1843 (99.73%)
+Banane: 289/289 (100.00%)
+
+Falsch erkannte Bilder:
+Original: Orange | Vorhergesagt: Nektarine | Bild: Assets/Fruits-360-Station-1/Training/Orange/orange 4__r0_93_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear 2__r_63_100.jpg
+Original: Pfirsich | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Pfirsich/Peach Flat 1__r_248_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear 2__r_66_100.jpg
+Original: Pfirsich | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Pfirsich/Peach Flat 1__r_249_100.jpg
+Original: Pfirsich | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Pfirsich/Peach Flat 1__r_255_100.jpg
+Original: Pfirsich | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Pfirsich/Peach Flat 1__r_257_100.jpg
+Original: Pfirsich | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Pfirsich/Peach Flat 1__r_260_100.jpg
+Original: Pfirsich | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Pfirsich/Peach Flat 1__r_264_100.jpg
+Original: Pfirsich | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Pfirsich/Peach Flat 1__r_272_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_171_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_174_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_178_100.jpg

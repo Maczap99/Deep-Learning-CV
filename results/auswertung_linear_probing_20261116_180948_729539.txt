@@ -1,0 +1,23 @@
+Checkpoint: linear_probing_20261116_180948_729539.pt
+Validierungsbilder: 6309
+Richtige Vorhersagen: 6303
+Fehler: 6
+Trefferquote: 99.90%
+
+Trefferquote pro Klasse:
+Orange: 603/605 (99.67%)
+Mandarine: 74/74 (100.00%)
+Clementine: 74/74 (100.00%)
+Apfel: 2488/2488 (100.00%)
+Pfirsich: 721/721 (100.00%)
+Nektarine: 215/215 (100.00%)
+Birne: 1839/1843 (99.78%)
+Banane: 289/289 (100.00%)
+
+Falsch erkannte Bilder:
+Original: Orange | Vorhergesagt: Nektarine | Bild: Assets/Fruits-360-Station-1/Training/Orange/orange 4__r0_93_100.jpg
+Original: Orange | Vorhergesagt: Nektarine | Bild: Assets/Fruits-360-Station-1/Training/Orange/orange 4__r0_94_100.jpg
+Original: Birne | Vorhergesagt: Nektarine | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear 2__r_66_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_171_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_174_100.jpg
+Original: Birne | Vorhergesagt: Apfel | Bild: Assets/Fruits-360-Station-1/Training/Birne/Pear Red 1__r_178_100.jpg

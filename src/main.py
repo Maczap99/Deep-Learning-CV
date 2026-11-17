@@ -12,6 +12,7 @@ repo_ordner = Path(__file__).resolve().parent.parent
 
 CHECKPOINT_ID = "timm/vit_base_patch16_224.augreg_in21k_ft_in1k"
 CHECKPOINT_REVISION = "2ec9fb3d7bb664aac471ac44582c94d18de33780"
+ALTER_STAND = "linear_probing_20261116_180948_729539.pt"
 
 KLASSEN_ZU_LABELS = {
     "Orange": 0,
@@ -106,6 +107,31 @@ for bild_index in range(max(map(len, validierungspfade_pro_klasse.values()))):
             )
             validierung_labels.append(label)
 
+fortsetzungspfad = repo_ordner / "models" / ALTER_STAND
+if not fortsetzungspfad.is_file():
+    raise FileNotFoundError(f"Fortsetzungscheckpoint nicht gefunden: {fortsetzungspfad}")
+
+gespeichert = torch.load(
+    fortsetzungspfad,
+    map_location="cpu",
+    weights_only=True,
+)
+
+if gespeichert["checkpoint_id"] != CHECKPOINT_ID:
+    raise RuntimeError("Checkpoint ID stimmt nicht überein.")
+
+if gespeichert["checkpoint_revision"] != CHECKPOINT_REVISION:
+    raise RuntimeError("Checkpoint Revision stimmt nicht überein.")
+
+if gespeichert["klassen_zu_labels"] != KLASSEN_ZU_LABELS:
+    raise RuntimeError("Klassen Zuordnung stimmt nicht überein.")
+
+epoche = gespeichert["epoche"] + 1
+
+print("Geladener Trainingsstand:", fortsetzungspfad.name)
+print("Abgeschlossene Epochen:", gespeichert["epoche"])
+print("Nächste Epoche:", epoche)
+
 modell = timm.create_model(
     "vit_base_patch16_224.augreg_in21k_ft_in1k",
     pretrained=True,
@@ -140,6 +166,8 @@ if (head.in_features, head.out_features, head.bias is not None) != (768, 8, True
         f"bias={head.bias is not None}"
     )
 
+head.load_state_dict(gespeichert["head_state_dict"])
+
 trainierbare_parameter = [
     (name, parameter)
     for name, parameter in modell.named_parameters()
@@ -163,6 +191,7 @@ optimierer = torch.optim.SGD(
     (parameter for _, parameter in trainierbare_parameter),
     lr=0.01,
 )
+optimierer.load_state_dict(gespeichert["optimizer_state_dict"])
 verlustfunktion = torch.nn.CrossEntropyLoss()
 
 modell.eval()
@@ -284,7 +313,7 @@ torch.save(
             for name, parameter in head.state_dict().items()
         },
         "optimizer_state_dict": optimierer.state_dict(),
-        "epoche": 1,
+        "epoche": epoche,
         "checkpoint_id": CHECKPOINT_ID,
         "checkpoint_revision": CHECKPOINT_REVISION,
         "klassen_zu_labels": KLASSEN_ZU_LABELS,

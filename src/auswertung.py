@@ -13,7 +13,7 @@ repo_ordner = Path(__file__).resolve().parent.parent
 
 CHECKPOINT_ID = "timm/vit_base_patch16_224.augreg_in21k_ft_in1k"
 CHECKPOINT_REVISION = "2ec9fb3d7bb664aac471ac44582c94d18de33780"
-CHECKPOINT_DATEINAME = "linear_probing_20261116_161553_349684.pt"
+CHECKPOINT_DATEINAME = "linear_probing_20261116_184948_182532.pt"
 
 KLASSEN_ZU_LABELS = {
     "Orange": 0,
@@ -28,8 +28,8 @@ KLASSEN_ZU_LABELS = {
 LABELS_ZU_KLASSEN = {label: klasse for klasse, label in KLASSEN_ZU_LABELS.items()}
 
 ERWARTETE_VALIDIERUNGSBILDER = 6309
-ERWARTETE_TREFFER = 6294
-ERWARTETE_FEHLER = 15
+ERWARTETE_TREFFER = 6296
+ERWARTETE_FEHLER = 13
 
 
 class BildDataset(Dataset):
