@@ -15,7 +15,7 @@ CHECKPOINT_ID = "timm/vit_base_patch16_224.augreg_in21k_ft_in1k"
 CHECKPOINT_REVISION = "2ec9fb3d7bb664aac471ac44582c94d18de33780"
 
 SEED = 32427
-ALTER_STAND = ""
+ALTER_STAND = "lora/rang_4/epoche_1"
 LERNRATE = 1e-3
 batchgroesse = 8
 
