@@ -1,0 +1,10 @@
+Epoche: 2
+Trainingsverlust: 1.282728
+Trainingsgenauigkeit: 50.77%
+Trainingsrichtige Vorhersagen: 18133/35713
+Trainingsbildanzahl: 35713
+Validierungsverlust: 1.576455
+Validierungsgenauigkeit: 39.44%
+Validierungsrichtige Vorhersagen: 2488/6309
+Validierungsbildanzahl: 6309
+Laufzeit: 453.70 s
